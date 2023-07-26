@@ -1,1 +1,55 @@
 @charset "utf-8";
+
+.wrapper { /* 그리드시스템 */
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* ===== header ===== */
+header {
+    position: relative;
+}
+
+/* flex-container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left-menu */
+.left-menu > ul {
+    display: flex;
+}
+
+/* right-menu */
+.right-menu > ul {
+    display: flex;
+}
+
+/* under-menu */
+.gnb {
+    display: flex;
+    align-items: center;
+}
+
+.gnb > li {
+    padding-right: 47px;
+}
+
+/* under-right-menu */
+.under-right-menu > ul {
+    display: flex;
+}
+
+.mobile-btn > span {
+    display: block;
+    width: 25px; height: 3px;
+    background-color: black;
+}
+
+.mobile-btn > span:nth-child(2) {
+    margin: 5px 0;
+}
