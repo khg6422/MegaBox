@@ -12,6 +12,11 @@ header {
     position: relative;
 }
 
+.background-bar {
+    background-color: black;
+    opacity: 50%;
+}
+
 /* flex-container */
 .flex-container {
     display: flex;
@@ -44,10 +49,12 @@ header {
     display: flex;
 }
 
+
+
 .mobile-btn > span {
     display: block;
-    width: 25px; height: 3px;
-    background-color: black;
+    width: 20px; height: 2px;
+    background-color: white;
 }
 
 .mobile-btn > span:nth-child(2) {
