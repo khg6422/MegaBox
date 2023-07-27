@@ -2,7 +2,7 @@
 
 .wrapper { /* 그리드시스템 */
     position: relative;
-    width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -10,14 +10,16 @@
 /* ===== header ===== */
 header {
     position: relative;
+    height: 1231px;
+    margin: 0 auto;
+    background: url(../imges/slide-img1.jpg) no-repeat top;
+    background-color: black;
 }
 
 .background-bar {
-    background-color: black;
-    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* flex-container */
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -29,27 +31,53 @@ header {
     display: flex;
 }
 
+.left-menu {
+    align-items: center;
+}
+
+.left-menu a {
+    padding: 0 10px;
+}
+
+.left-menu a:first-child {
+    padding-left: 0;
+}
+
 /* right-menu */
 .right-menu > ul {
     display: flex;
 }
 
-/* under-menu */
-.gnb {
-    display: flex;
-    align-items: center;
+.right-menu a {
+    padding: 0 10px;
 }
 
-.gnb > li {
-    padding-right: 47px;
+.right-menu a:last-child {
+    padding-right: 0;
+}
+
+/* hr */
+hr {
+    margin: 15px 0;
+}
+
+/* under-menu */
+.under-menu {
+    margin: 0 auto;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb a {
+    padding: 0 20px;
 }
 
 /* under-right-menu */
 .under-right-menu > ul {
     display: flex;
 }
-
-
 
 .mobile-btn > span {
     display: block;
