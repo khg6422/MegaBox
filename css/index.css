@@ -12,11 +12,12 @@ header {
     position: relative;
     height: 1231px;
     margin: 0 auto;
-    background: url(../imges/slide-img1.jpg) no-repeat top;
+    background: url(../imges/slide-img5.jpg) no-repeat top;
     background-color: black;
 }
 
 .background-bar {
+    padding: 8px 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -24,9 +25,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 20px;
 }
 
 /* left-menu */
+.left-menu {
+    position: relative;
+    top: 5px;
+}
+
 .left-menu > ul {
     display: flex;
 }
@@ -39,6 +46,12 @@ header {
 
 .left-menu a:first-child {
     padding-left: 0;
+}
+
+/* logo */
+.logo {
+    position: relative;
+    top: 5px;
 }
 
 /* right-menu */
@@ -54,14 +67,10 @@ header {
     padding-right: 0;
 }
 
-/* hr */
-hr {
-    margin: 15px 0;
-}
-
 /* under-menu */
 .flex-container2 {
     position: relative;
+    margin-top: 15px;
 }
 
 .gnb {
@@ -71,15 +80,10 @@ hr {
     width: 50%;
 }
 
-.gnb li {
-padding: 5px;
-    text-align: center;
-}
-
 /* under-right-menu */
 .under-right-menu {
     position: absolute;
-    right: 0; top: -1px;
+    right: 0; top: 0;
 }
 
 .under-right-menu > ul {
@@ -88,7 +92,7 @@ padding: 5px;
 }
 
 .under-right-menu li {
-    padding: 5px;
+    padding-left: 5px;
 }
 
 .mobile-btn > span {
