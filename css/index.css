@@ -153,7 +153,7 @@ header {
 .movie-box li .book > .book-btn {
     width: 123px;
     height: 27px;
-    line-height: 27px;
+    line-height: 25px;
     font-size: 16px;
     text-align: center;
     border: 1px solid #ccc;
@@ -293,7 +293,7 @@ header {
     margin-right: 9px;
 }
 
-.curation-main .btn-box .book-btn {
+.curation-main .btn-box .book-btn2 {
     text-align: center;
     background-color: #037b94;
     line-height: 55px;
@@ -301,7 +301,7 @@ header {
 }
 
 .curation-main .btn-box .info-btn:hover,
-.curation-main .btn-box .book-btn:hover {
+.curation-main .btn-box .book-btn2:hover {
     background-color: #014452;
 }
 
