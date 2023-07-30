@@ -2,7 +2,7 @@
 
 .wrapper { /* 그리드시스템 */
     position: relative;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -161,3 +161,22 @@ header {
 }
 
 /* ===== main =====*/
+/* event */
+.event .sub_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.event .sub_title > p,
+.event .sub_title > a {
+    color: black;
+} 
+
+.img_box1 {
+    display: flex;
+}
+
+.img_box2 {
+    display: flex;
+}
