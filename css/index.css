@@ -78,16 +78,15 @@ header {
 
 /* flex-container2 */
 .flex-container2 {
+    position: relative;
     width: 100%;
-    display: flex;
     margin-top: 15px;
-    justify-content: space-between;
 }
 
 /* under-menu */
 .gnb {
     display: flex;
-    width: 450px;
+    width: 400px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -99,6 +98,8 @@ header {
 
 /* under-right-menu */
 .under-right-menu > ul {
+    position: absolute;
+    right: 0; top: 0;
     width: 220px;
     display: flex;
     justify-content: space-between;
@@ -243,8 +244,14 @@ header {
 }
 
 /* icon-box */
-.icon-box > ul {
+.icon-box {
+    background-color: #503396;
+}
+
+.icon-box > .wrapper > ul {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 /* cinema */
