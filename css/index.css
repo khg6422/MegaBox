@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 /* left-menu */
@@ -56,7 +56,8 @@ header {
 
 /* logo */
 .logo {
-    padding-top: 15px;
+    width: 166px;
+    height: 54px;
 }
 
 /* right-menu */
@@ -84,9 +85,13 @@ header {
 }
 
 /* under-menu */
+.under-menu {
+    margin-bottom: 5px; 
+}
+
 .gnb {
     display: flex;
-    width: 400px;
+    width: 450px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -124,9 +129,8 @@ header {
 
 /* movie-box */
 .movie-box {
-    width: 100%;
     position: absolute;
-    top: 633px;
+    top: 627px;
 }
 
 .movie-box ul {
@@ -138,9 +142,45 @@ header {
     margin-right: 20px;
 }
 
-.movie-box li > img {
+.movie-box li > .space {
     position: relative;
+} 
+
+.movie-box li > .space > img { 
     width: 280px;
+}
+
+.movie-box li > .space::after {
+    position: absolute;
+    left: 0; top: 0;
+    content: ''; 
+    opacity: 0.7;
+    background-color: black;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s;
+}
+
+.movie-box li > .space:hover::after {
+    width: 100%;
+}
+
+.movie-box li > .space > .plus {
+    position: absolute;
+    left: -10px; top: 10px;
+    width: 260px; height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.movie-box li > .space > .plus > p {
+    text-align: justify;
+}
+
+.movie-box li > .space:hover > .plus {
+    left: 20px;
+    opacity: 1;
 }
 
 .movie-box p {
@@ -249,9 +289,18 @@ header {
 }
 
 .icon-box > .wrapper > ul {
-    width: 100%;
     display: flex;
+}
+
+.icon-box > .wrapper > ul > li {
+    margin: 0 auto;
     justify-content: space-between;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.icon-box > .wrapper > ul > li > img {
+
 }
 
 /* cinema */
